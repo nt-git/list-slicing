@@ -97,7 +97,7 @@ def last_five(input_list):
 
     """
 
-    return []
+    return input_list[-5:]
 
 
 def middle(input_list):
@@ -110,7 +110,7 @@ def middle(input_list):
 
     """
 
-    return []
+    return input_list[2:-2]
 
 
 def inner_four(input_list):
@@ -123,7 +123,7 @@ def inner_four(input_list):
 
     """
 
-    return []
+    return input_list[2:6]
 
 
 def inner_four_end(input_list):
@@ -139,7 +139,7 @@ def inner_four_end(input_list):
 
     """
 
-    return []
+    return input_list[-6:-2]
 
 
 def replace_head(input_list):
@@ -154,7 +154,8 @@ def replace_head(input_list):
 
     """
 
-    pass
+    input_list[0] = 42
+    return
 
 
 def replace_third_and_last(input_list):
@@ -169,7 +170,10 @@ def replace_third_and_last(input_list):
 
     """
 
-    pass
+    input_list[2] = 37
+    input_list[-1] = 37
+
+    return
 
 
 def replace_middle(input_list):
@@ -188,7 +192,8 @@ def replace_middle(input_list):
 
     """
 
-    pass
+    input_list[2:-2] = [42, 37]
+    return
 
 
 def delete_third_and_seventh(input_list):
@@ -203,7 +208,9 @@ def delete_third_and_seventh(input_list):
 
     """
 
-    pass
+    del input_list[2]
+    del input_list[5]
+    return
 
 
 def delete_middle(input_list):
@@ -219,8 +226,11 @@ def delete_middle(input_list):
     True
 
     """
-
-    pass
+    while len(input_list) > 4 :
+        input_list.pop(2)
+   
+    
+    return
 
 
 ##############################################################################
